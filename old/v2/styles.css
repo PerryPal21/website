@@ -1,0 +1,118 @@
+/* CSS */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+
+/* Specify in CSS */
+* { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}
+
+
+img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.projects{
+  display: none;
+}
+
+.projectButton {
+  display: block;
+}
+
+.hidden > .text > h2 {
+  text-align: center;
+}
+
+
+.hidden > .projects > h2 {
+  text-align: center;
+
+}
+
+.hidden > .text > p {
+  text-align: center;
+
+}
+
+.hidden > .text > button {
+  display: block;
+  width: 20%;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+.hidden > .projects > a > button {
+  display: block;
+  width: 60%;
+  padding: 2%;
+  margin: 0 auto;
+
+}
+
+.hidden > a > img {
+  width: 55%;
+}
+
+.hidden > .other > a {
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

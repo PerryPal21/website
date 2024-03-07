@@ -1,0 +1,38 @@
+.input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .inputDiv {
+   padding: 25px; 
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .output {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .outputDiv {
+    padding: 25px; 
+  }
+  
+  #encodebtn {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  #decodebtn {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  p {
+    text-align: center;
+  }

@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+ <link rel="stylesheet" href="perry.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+     <div class="container">
+	<style>
+	.small {
+		font-size: 12.5px;
+	}
+	</style>
+       <h1>Perry.css</h1>
+      <p>A simple, classless, good-looking css framework as shown on my <a href="https://perrypal.xyz">website</a></p>
+      <a href="https://github.com/PerryPal21/perry.css"><h6>Check it out on Github</h6></a>
+      <br>
+      <h5>How to use it</h5>
+      <p>1. Just drop the line below into your head tag</p>
+      <pre><code class="small">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PerryPal21/perry.css@master/perry.css"&gt;</code></pre>
+      <p>2. Make sure to add a <code>.container</code> div after the body tag</p>
+      <br>
+      <h5>Inspiration</h5>
+      
+      <p>It is inspired by two other great css frameworks, water.css and tilde.css. The colorscheme was influence by the Nord theme for an artic vibe. The code itself is derived from tilde.css without the bootstrap material that is not needed allowing for this to be classless!</p>
+      <br>
+      <h5>Why?</h5>
+      <p>I primarily made this because I wanted an easy way to make quick websites that match my personal theme. Feel free to fetch the <code>perry.css</code> from the <a href="">github repo</a> and use it for anything your heart desires</p>
+      <hr>
+      <h2 id="demo">Element demos</h2>
+      <p>This is supposed to be a demo page so we need more elements!</p>
+      <h3 id="form-elements">Form elements</h3>
+      <form>
+         <label for="email">Email</label> <input type="email" name="email" id="email" placeholder="john.doe@gmail.com"> <label for="id">User id (read only)</label> <input readonly="readonly" name="id" id="id" value="04D6H89Z"> <label for="disabled">Random disabled input</label> <input disabled="disabled" name="disabled" id="disabled" placeholder="Because why not?"> <label for="about">About me</label> 
+         <textarea name="about" id="about" placeholder="I am a textarea..."></textarea>
+         <label>Choose a Doe:</label> 
+         <div> <input type="radio" id="john" name="drone" value="john"> <label for="john">John Doe</label> </div>
+         <div> <input type="radio" id="jane" name="drone" value="jane"> <label for="jane">Jane Doe</label> </div>
+         <div> <input type="radio" id="johnny" name="drone" value="johnny" checked="checked"> <label for="johnny">Johnny Doe</label> </div>
+         <br> <input type="checkbox" name="remember" id="remember" checked="checked"> <label for="remember">Remember me</label> <input type="submit" value="Submit"> <input type="reset" value="Reset"> 
+      </form>
+      <h3 id="code">Code</h3>
+      <p> Below is some code, you can copy it with <kbd>Ctrl-C</kbd>. Did you know, <code>alert(1)</code> can show an alert in JavaScript! </p>
+      <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
+      <h3>Images</h3>
+      <img src="perry.jpg" alt="perrypic">
+      <h3 id="other">Other</h3>
+      <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
+      <img src="Water.css_files/287.jpg" alt="Example kitten"> 
+      <hr>
+      <p>And here's a nicely marked up table!</p>
+      <table>
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Quantity</th>
+               <th>Price</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Godzilla</td>
+               <td>2</td>
+               <td>$299.99</td>
+            </tr>
+            <tr>
+               <td>Mozilla</td>
+               <td>10</td>
+               <td>$100,000.00</td>
+            </tr>
+            <tr>
+               <td>Quesadilla</td>
+               <td>1</td>
+               <td>$2.22</td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="typography">Typography</h3>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum
+         hendrerit velit, quis ullamcorper sem congue ac. Quisque id magna 
+         rhoncus, sodales massa vel, vestibulum elit. Duis ornare accumsan 
+         egestas. Proin maximus lacus interdum leo molestie convallis. Orci 
+         varius natoque penatibus et magnis dis parturient montes, nascetur 
+         ridiculus mus. Ut iaculis risus eu felis feugiat, eu mollis neque 
+         elementum. Donec interdum, nisl id dignissim iaculis, felis dui aliquet 
+         dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad
+         litora torquent per conubia nostra, per inceptos himenaeos. <strong>This is strong,</strong> this is normal, <b>this is just bold,</b> <em>and this is emphasized!</em> And heck, <a href="https://watercss.kognise.dev/">here</a>'s a link. 
+      </p>
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+         "The HTML blockquote Element (or HTML Block Quotation Element) 
+         indicates that the enclosed text is an extended quotation. Usually, this
+         is rendered visually by indentation (see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a> for how to change it). A URL for the source of the quotation may be given using the <code>cite</code> attribute, while a text representation of the source can be given using the <code>&lt;cite&gt;</code> cite element." 
+         <footer> <cite>MDN, "The Block Quotation element"</cite> </footer>
+      </blockquote>
+      <ul>
+         <li>Unordered list item 1</li>
+         <li>Unordered list item 2</li>
+         <li>Unordered list item 3</li>
+      </ul>
+      <ol>
+         <li>Ordered list item 1</li>
+         <li>Ordered list item 2</li>
+         <li>Ordered list item 3</li>
+      </ol>
+      <p>Addresses are also styled to be <strong>awesome</strong>!</p>
+      <address> <a href="mailto:john.doe@example.com">john.doe@example.com</a><br> <a href="tel:778-330-2389">778-330-2389</a><br> <a href="sms:666-666-6666">666-666-6666</a><br> </address>
+      <br> 
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <footer> <a href="#">Back to top ⬆</a> </footer> 
+      </div>
+   </body>
+   
+</html>
+

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/perry.css">
+  <script src="assets/particles.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <title>PerryPal</title>
+</head>
+
+<body>
+<div id="particles-js"></div>
+<div class="container">
+<script>
+
+function switchImg() {
+    var main = document.querySelector(".perry")
+    var levi = document.querySelector(".levi")
+    if (levi.style.display === "none") {
+        levi.style.display = "block"
+        main.style.display = "none"
+    } else {
+        levi.style.display = "none"
+        main.style.display = "block"
+    }
+}
+
+  
+function motdswitch() {
+    var main = document.querySelector(".motd")
+    if (main.style.display === "none") {
+        main.style.display = "block"
+    } else {
+        main.style.display = "none"
+    }
+}
+
+
+particlesJS("particles-js", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.1,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+
+</script>
+<style>
+
+img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.container {
+  max-width: 80rem;
+}
+
+.image {
+  background-color: #2b3a4c;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.nodec {
+  text-decoration: none;
+  color: white;
+}
+
+canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #202b38; background-image: url(""); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+.pgp > p{
+  display: inline;
+}
+
+.icon {
+  width: 50px;
+  display: inline;
+  background-color: #202B38;
+}
+
+.project {
+  padding: 20px;
+  background-color: #2B3A4C;
+  border-radius: 10px;
+  margin-bottom: 15px;
+/*   border-width: 10px;
+  border-style: solid;
+  border-color: #202B38; */
+}
+
+.icons {
+  font-size: 35px;
+}
+
+.motdswitch {
+  margin: auto;
+}
+
+.motd {
+  -webkit-animation: fadeEffect 1s linear forwards;
+  animation: fadeEffect 1s linear forwards;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+</style>
+
+<h1>PerryPal</h1>
+<a href="haxxor.html"><p>[Click to View the Haxxor Version of this Website]</p></a>
+<div class="image">
+  <a href="javascript:switchImg()">
+  <img src="assets/perry.png" class="perry" alt="perry" >
+  <img src="assets/leviperry.png" class="levi" style="display: none;"alt="levi" >
+</a>
+</div>
+<br>
+<p>Hi, I am Perry. I like to play around with Linux, and web app development. Here you can find my projects and some other cool stuff. You can contact me on Discord at <code>PerryPal#2601</code>.</p>
+ <br>
+
+<div class="center">
+  <a href="https://github.com/PerryPal21"><i class='bx bxl-github icons'></i></a>
+  <a href="https://codepen.io/perrypal"><i class='bx bxl-codepen icons'></i></a>
+  <a href="https://discordapp.com/users/448961522668929025"><i class='bx bxl-discord-alt icons'></i></a>
+  <a href="mailto:perrypal@tilde.team"><i class='bx bx-mail-send icons'></i></a>
+</div>
+<br>
+<!---<div class="pgp center">
+<a href=""><p>[My PGP Key]<p></a></div>--->
+<hr>
+<br>
+<h4>Completed Projects</h4>
+<div class="projectLarge">
+   <div class="project">
+      <h5><a href="https://github.com/PerryPal21/MinimalBulletinBoard">Perry's Bulletin Board</a></h5>
+      <p>A minimal bulletin board for images or messages</p>
+    </div> 
+    <div class="project">
+      <h5><a href="https://top.gg/bot/799067793357537290#/">Hermes</a></h5>
+      <p>A multipurpose discord bot which you can talk to</p>
+    </div>
+    <div class="project">
+      <h5><a href="https://github.com/PerryPal21/Slasher">Slasher</a></h5>
+      <p>A discord bot that can create custom slash commands</p>
+    </div>
+    <div class="project">
+      <h5><a href="https://techy-api.vercel.app">Techy-api</a></h5>
+      <p>An API to generate a cool sci-fi piece of dialogue</p>
+    </div>
+    <div class="project">
+      <h5><a href="https://gpg-web-perrypal21.vercel.app/">GPG Encrypter</a></h5>
+      <p>Encrypt text using a public GPG key in your browser</p>
+    </div> 
+    <div class="project">
+      <h5><a href="/css">Perry.css</a></h5>
+      <p>The same epic css framework this website is built on</p>
+    </div>
+   <div class="project">
+      <h5><a href="https://github.com/PerryPal21/motd">Perry's MOTD</a></h5>
+      <p>An simple MOTD app</p>
+    </div>
+    <div class="project">
+      <h5><a href="/crypt">Crypt</a></h5>
+      <p>A minimal base64 encoder and decoder</p>
+    </div>
+  <br>
+</div>
+<h4>Other Cool Stuff</h4>
+<ul>
+	  <li>
+    <a href="wordle" class="nodec"><i class='bx bxs-message-alt-detail'></i> My Instance of a really good Wordle clone</a>
+  </li>
+  <li>
+    <a href="https://movie-web.app" class="nodec"><i class='bx bxs-movie-play' ></i> A Movie-Web instance cause "watching content legally is boring"</a>
+  </li>
+  <li>
+    <a href="writing" class="nodec"><i class='bx bxs-edit' ></i> A Markdown-based Persistent Writing Instance</a>
+  </li>
+   <li>
+  <a href="opendir" class="nodec"><i class='bx bxs-file-find' ></i> Search Open Directories for anything you might need</a>
+  </li>
+  <li>
+    <a href="typing" class="nodec"><i class='bx bxs-keyboard' ></i> Typings.gg Instance to test your typing speed</a>
+  </li>
+  <li>
+    <a href="soli" class="nodec"><i class='bx bx-play-circle' ></i> A Cool little solitaire animation</a>
+  </li>
+   <li>
+    <a href="fluid" class="nodec"><i class='bx bxs-palette' ></i> A browser-based Fluid Engine</a>
+  </li>
+  <li>
+    <a href="https://annas-archive.org/" class="nodec"><i class='bx bx-book' ></i> Best place to find ebooks</a>
+  </li> 
+    <li>
+    <a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index/" class="nodec"><i class='bx bx-brain' ></i> Most useful archive of tools</a>
+  </li>  
+   <li>
+    <a href="old" class="nodec"><i class='bx bx-folder' ></i> Old versions of my website</a>
+  </li>  
+</ul>
+ <h4>Mirrors of my Website</h4>
+ <ul>
+	 <li><a href="https://perrypal.pages.dev">https://perrypal.pages.dev</a></li>
+	 <li><a href="https://perrypal.tilde.team">https://perrypal.tilde.team</a></li>
+	 <li><a href="https://envs.net/~perry">https://envs.net/~perry</a></li>
+	 <li><a href="https://perrypal.32bit.cafe">https://perrypal.32bit.cafe</a></li>
+ </ul>
+</div>
+</body>
+</html>
+
